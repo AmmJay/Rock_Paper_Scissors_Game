@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background: linear-gradient(to left, rgb(23, 151, 141), rgb(8, 120, 167)) 
+}
+
+.gameBoard{
+    width: 50%;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    margin-top: 50px;
+    border-radius: 30px;
+    background: rgb(67, 44, 44);
+    box-shadow: 1px 2px 8px 5px rgb(59, 58, 58);
+}
+
+.icons{
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.iconButtons{
+    border: 4px white;
+    border-style: double;
+    width: 150px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(19, 149, 101);
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+
+.iconButtons:hover{
+    box-shadow: 0 0 2px 5px rgb(166, 197, 171);
+    transform: scale(1.04);
+}
+.fa-icons{
+    height: 80px;
+    filter: invert();
+}
+#restart{
+    background-color:rgb(227, 107, 107);
+    width: 30%;
+    margin: auto;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+#restart svg{
+    /* filter:none */
+    height: 40px;
+    transition: 0.1s linear;
+}
+#restart:hover{
+    box-shadow: 0 0 8px 5px rgb(244, 245, 244);
+}
+#statement, #scoreBoard, #remark{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}
